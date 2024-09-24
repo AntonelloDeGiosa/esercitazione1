@@ -20,6 +20,7 @@ let firstName
 let d1,d2,d3,d4,d5,d6,d7
 let rgiuste = 0
 let rsbagliate = 0
+let percentuale = 0
 
 do{
     firstName= prompt("Qual è il tuo nome ?")
@@ -33,7 +34,7 @@ if(d1.toLowerCase().trim() === "argentina"){
 }else{
     rsbagliate++
     console.log("Risposta sbagliata")
-    console.log("La risposta corretta era argentina.")
+    console.log( "Hai risposto " +d1+"." +" La risposta corretta era argentina.")
 }
 
 
@@ -45,7 +46,7 @@ if(d2.toLowerCase().trim() === "totti"){
 }else{
     rsbagliate++
     console.log("Risposta sbagliata")
-    console.log("La risposta corretta era totti.")
+    console.log( "Hai risposto " +d2+"." +" La risposta corretta era totti.")
 }
 
 
@@ -57,7 +58,7 @@ if(d3.toLowerCase().trim() === "torino"){
 }else{
     rsbagliate++
     console.log("Risposta sbagliata")
-    console.log("La risposta corretta era torino.")
+    console.log("Hai risposto "+ d3+"." +" La risposta corretta era torino.")
 }
 
 d4=prompt("4.prima di sabato ")
@@ -68,7 +69,7 @@ if(d4.toLowerCase().trim() === "venerdi"){
 }else{
     rsbagliate++
     console.log("Risposta sbagliata")
-    console.log("La risposta corretta era venerdi.")
+    console.log("Hai risposto " +d4+"." +" La risposta corretta era venerdi.")
 }
 
 d5=prompt("5.Il nome di berlusconi ")
@@ -79,7 +80,7 @@ if(d5.toLowerCase().trim() === "silvio"){
 }else{
     rsbagliate++
     console.log("Risposta sbagliata")
-    console.log("La risposta corretta era silvio.")
+    console.log( "Hai risposto " +d5+"." +" La risposta corretta era silvio.")
 }
 
 
@@ -91,7 +92,7 @@ if(d6.toLowerCase().trim() === "tavola"){
 }else{
     rsbagliate++
     console.log("Risposta sbagliata")
-    console.log("La risposta corretta era tavola.")
+    console.log( "Hai risposto "+ d6+"." +" La risposta corretta era tavola.")
 }
 
 
@@ -103,11 +104,11 @@ if(d7.toLowerCase().trim() === "giacomo"){
 }else{
     rsbagliate++
     console.log("Risposta sbagliata")
-    console.log("La risposta corretta era giacomo.")
+    console.log("Hai risposto " +d7+"." +" La risposta corretta era giacomo.")
 }
 
-
-console.log("il tuo punteggio è:"+ rgiuste+"/7")
+percetale = (rgiuste/7)*100
+console.log("il tuo punteggio è:"+ rgiuste+"/7 "+ "con una percentuale di :"+ percetale.toFixed(1)+"%")
 
 if(rgiuste>5){
     console.log("Complimeti test superato")
